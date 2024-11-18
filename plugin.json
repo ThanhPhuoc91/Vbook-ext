@@ -1,1 +1,19 @@
-
+{
+    "metadata": {
+        "author": "Phuoc91",
+        "description": "No hentai no life~"
+    },
+    "data": [
+        {
+            "name": "Truyện QQ",
+            "author": "Phuoc91",
+            "path": "https://raw.githubusercontent.com/ThanhPhuoc91/vbook-ext/main/truyenqq/plugin.zip",
+            "version": 11,
+            "type": "comic",
+            "locale": "vi_VN",
+            "source": "https://truyenqqto.com",
+            "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/vbook-ext/main/truyenqq/icon.png",
+            "description": "Đọc truyện trên trang Truyện QQ"
+        }
+    ]
+}

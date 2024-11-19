@@ -5,6 +5,17 @@
     },
     "data": [
         {
+        "name": "Vlog Truyện",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/vlogtruyen/plugin.zip",
+        "version": 1,
+        "source": "https://vlogtruyen34.com",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/vlogtruyen/icon.png",
+        "description": "Đọc truyện trên trang vlogtruyen",
+        "type": "comic",
+        "locale": "vi_VN"
+        },
+        {
             "name": "Truyện QQ",
             "author": "Phuoc",
             "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyenqq/plugin.zip",

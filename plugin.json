@@ -5,6 +5,17 @@
     },
     "data": [
         {
+        "name": "TruyenGG",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyengg/plugin.zip",
+        "version": 1,
+        "source": "https://truyengg.com",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyengg/icon.png",
+        "description": "Đọc truyện trên trang TruyenGG",
+        "type": "comic",
+        "locale": "vi_VN"
+        },
+        {
         "name": "Doctruyen3Q",
         "author": "Phuoc",
         "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/doctruyen3q/plugin.zip",

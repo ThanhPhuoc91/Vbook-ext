@@ -5,6 +5,17 @@
     },
     "data": [
         {
+        "name": "Doctruyen3Q",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/doctruyen3q/plugin.zip",
+        "version": 1,
+        "source": "https://doctruyen3qk.pro",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/doctruyen3q/icon.png",
+        "description": "Đọc truyện trên trang Doctruyen3Q",
+        "type": "comic",
+        "locale": "vi_VN"
+        },
+        {
         "name": "Vlog Truyện",
         "author": "Phuoc",
         "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/vlogtruyen/plugin.zip",

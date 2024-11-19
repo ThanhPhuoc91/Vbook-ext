@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "DocTruyen3Q",
+    "author": "Phuoc",
+    "version": 1,
+    "source": "https://doctruyen3qk.pro/",
+    "regexp": "(www.)?doctruyen3qk.pro/truyen-tranh/[0-9a-z-]+/\\d+/?$",
+    "description": "Đọc truyện trên trang doctruyen3q",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

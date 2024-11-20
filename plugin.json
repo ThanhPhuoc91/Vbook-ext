@@ -4,17 +4,29 @@
         "description": ""
     },
     "data": [
-    {
+        {
+        "name": "Truyện VN",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyenvn/plugin.zip",
+        "version": 1,
+        "source": "https://truyenvn.vin",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyenvn/icon.png",
+        "description": "Đọc truyện trên trang Truyện VN",
+        "tag": "nsfw",
+        "type": "comic",
+        "locale": "vi_VN"
+        },
+        {
        "name": "Biqubu",
-      "author": "Phuoc",
-      "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/biqubu/plugin.zip",
-      "version": 1,
-      "source": "https://www.biqubu3.com",
-      "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/biqubu/icon.png",
-      "description": "Đọc truyện trên trang Biqubu",
-      "type": "chinese_novel",
-      "locale": "zh_CN"
-    },
+       "author": "Phuoc",
+       "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/biqubu/plugin.zip",
+       "version": 1,
+       "source": "https://www.biqubu3.com",
+       "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/biqubu/icon.png",
+       "description": "Đọc truyện trên trang Biqubu",
+       "type": "chinese_novel",
+       "locale": "zh_CN"
+        },
         {
         "name": "LxManga",
         "author": "Phuoc",

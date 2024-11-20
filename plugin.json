@@ -4,6 +4,17 @@
         "description": ""
     },
     "data": [
+    {
+       "name": "Biqubu",
+      "author": "Phuoc",
+      "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/biqubu/plugin.zip",
+      "version": 1,
+      "source": "https://www.biqubu3.com",
+      "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/biqubu/icon.png",
+      "description": "Đọc truyện trên trang Biqubu",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
         {
         "name": "LxManga",
         "author": "Phuoc",

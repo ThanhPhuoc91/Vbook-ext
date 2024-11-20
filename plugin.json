@@ -5,6 +5,18 @@
     },
     "data": [
         {
+        "name": "LxManga",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/lxmanga/plugin.zip",
+        "version": 1,
+        "source": "https://lxmanga.store",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/lxmanga/icon.png",
+        "description": "Đọc truyện trên trang LxManga",
+        "tag": "nsfw",
+        "type": "comic",
+        "locale": "vi_VN"
+        },
+        {
         "name": "TruyenGG",
         "author": "Phuoc",
         "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyengg/plugin.zip",

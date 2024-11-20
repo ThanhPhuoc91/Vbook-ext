@@ -5,6 +5,17 @@
     },
     "data": [
         {
+        "name": "Top Truyện",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/toptruyenx/plugin.zip",
+        "version": 1,
+        "source": "https://www.toptruyento.pro",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/toptruyenx/icon.png",
+        "description": "Đọc truyện trên trang Top Truyện",
+        "type": "comic",
+        "locale": "vi_VN"
+        },
+        {
         "name": "TruyenGG",
         "author": "Phuoc",
         "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyengg/plugin.zip",

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "LxManga",
+    "author": "Phuoc",
+    "version": 1,
+    "source": "https://lxmanga.store",
+    "regexp": "(www.)?lxmanga.store/truyen/.*",
+    "description": "Đọc truyện trên trang LX Manga",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag" : "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

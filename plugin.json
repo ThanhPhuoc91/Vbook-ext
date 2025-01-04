@@ -5,6 +5,17 @@
     },
     "data": [
         {
+        "name": "69shu",
+        "author": "Phuoc",
+        "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/69shu/plugin.zip",
+        "version": 1,
+        "source": "https://69shuba.cx",
+        "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/69shu/icon.png",
+        "description": "Đọc truyện trên trang 69shu",
+        "type": "chinese_novel",
+        "locale": "vi_VN"
+        },
+        {
         "name": "Truyện VN",
         "author": "Phuoc",
         "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/truyenvn/plugin.zip",

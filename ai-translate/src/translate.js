@@ -1,4 +1,4 @@
-load("language_list.js"); // Có thể không cần thiết
+load("language_list.js");
 
 function execute(text) {
     return translateContent(text, 0);
@@ -7,7 +7,7 @@ function execute(text) {
 function translateContent(text, retryCount) {
     if (retryCount > 2) return null;
 
-    const apiUrl = 'https://text.pollinations.ai/'; // Endpoint API của Pollinations.AI Text Generation (POST)
+    const apiUrl = 'https://text.pollinations.ai/';
 
     const headers = {
         'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ function translateContent(text, retryCount) {
                 content: `Dịch đoạn văn bản sau sang tiếng Việt: "${text}"` // Prompt dịch thuật
             }
         ],
-        model: 'openai' // Hoặc 'mistral' - chọn model theo ý bạn
+        model: 'openai'
     });
 
     let response = fetch(apiUrl, {
@@ -31,12 +31,9 @@ function translateContent(text, retryCount) {
 
     if (response.ok) {
         let result = response.json();
-        // **Pollinations.AI trả về văn bản dịch trực tiếp trong response, không có cấu trúc lồng nhau như OpenAI**
-        let translatedText = result.response.trim(); // Lấy văn bản dịch từ response.response
+        let translatedText = result.response.trim();
         return Response.success(translatedText);
     } else {
-        // Xử lý lỗi tương tự
-        console.error("Lỗi dịch thuật từ Pollinations.AI API:", response.status, response.statusText);
-        return translateContent(text, retryCount + 1); // Thử lại
+        return translateContent(text, retryCount + 1);
     }
 }

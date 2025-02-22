@@ -9,8 +9,8 @@
       "author": "phuoc",
       "version": 1,
       "source": "https://text.pollinations.ai/",
-      "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/blob/main/ai-translate/plugin.zip",
-      "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/blob/main/ai-translate/icon.png",
+      "path": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/ai-translate/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/ThanhPhuoc91/Vbook-ext/main/ai-translate/icon.png",
       "description": "Dịch truyện bằng Ai",
       "type": "translate"
     }

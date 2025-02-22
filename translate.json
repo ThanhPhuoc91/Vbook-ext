@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "author": "phuoc",
+    "description": "test"
+  },
+  "data": [
+    {
+      "name": "Ai Dịch",
+      "author": "phuoc",
+      "version": 1,
+      "source": 'https://text.pollinations.ai/',
+      "path": "",
+      "icon": "",
+      "description": "Dịch truyện bằng Ai",
+      "type": "translate"
+    }
+  ]
+}

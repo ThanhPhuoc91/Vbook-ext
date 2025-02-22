@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Ai Dịch",
+    "author": "phuoc",
+    "version": 1,
+    "source": "https://text.pollinations.ai/",
+    "description": "Dịch truyện bằng Ai",
+    "type": "translate"
+  },
+  "script": {
+    "language": "language.js",
+    "translate": "translate.js"
+  },
+  "config": {
+    "support_auto_detect": false,
+    "max_length": 5000,
+    "required_api_key": false,
+    "support_url": "https://text.pollinations.ai/"
+  }
+}

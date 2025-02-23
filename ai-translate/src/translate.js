@@ -14,7 +14,7 @@ async function translateContent(text, apiKey) {
                 "Authorization": `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-                model: "gpt-3.5-turbo", // Hoặc model khác bạn muốn dùng từ danh sách hỗ trợ
+                model: "gpt-4o-all", // Hoặc model khác bạn muốn dùng từ danh sách hỗ trợ
                 messages: [
                     {
                         role: "system",

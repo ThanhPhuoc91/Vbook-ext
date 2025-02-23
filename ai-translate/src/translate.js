@@ -1,39 +1,43 @@
-load("language_list.js");
-
-function execute(text) {
-    return translateContent(text, 0);
+function execute(text, apiKey) {
+    return translateContent(text, apiKey);
 }
 
-function translateContent(text, retryCount) {
-    if (retryCount > 2) return null;
+async function translateContent(text, apiKey) {
+    try {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${apiKey}`,
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo", // Hoặc model khác bạn muốn dùng
+                messages: [
+                    {
+                        role: "system",
+                        content: "Bạn là một công cụ dịch thuật chuyên nghiệp từ tiếng Trung sang tiếng Việt. Hãy dịch văn bản người dùng cung cấp một cách chính xác."
+                    },
+                    {
+                        role: "user",
+                        content: `Dịch văn bản sau sang tiếng Việt: ${text}`
+                    }
+                ]
+            }),
+        });
 
-    const apiUrl = 'https://text.pollinations.ai/';
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error("Lỗi từ OpenAI API:", errorData);
+            return `Lỗi dịch thuật: ${errorData.error?.message || response.statusText}`;
+        }
 
-    const headers = {
-        'Content-Type': 'application/json'
-    };
+        const data = await response.json();
+        const translatedText = data.choices[0].message.content.trim();
+        return translatedText;
 
-    const requestBody = JSON.stringify({
-        messages: [
-            {
-                role: "user",
-                content: `Dịch đoạn văn bản sau sang tiếng Việt: "${text}"` // Prompt dịch thuật
-            }
-        ],
-        model: 'openai'
-    });
-
-    let response = fetch(apiUrl, {
-        method: 'POST',
-        headers: headers,
-        body: requestBody
-    });
-
-    if (response.ok) {
-        let result = response.json();
-        let translatedText = result.response.trim();
-        return Response.success(translatedText);
-    } else {
-        return translateContent(text, retryCount + 1);
+    } catch (error) {
+        console.error("Lỗi trong quá trình dịch:", error);
+        return `Lỗi dịch thuật: ${error.message}`;
     }
 }
+

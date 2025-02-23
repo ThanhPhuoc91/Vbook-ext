@@ -1,17 +1,18 @@
-function execute(text, apiKey) {
+function execute(text) {
+    const apiKey = "sk-OsMMq65tXdfOIlTUYtocSL7NCsmA7CerN77OkEv29dODg1EA";
     return translateContent(text, apiKey);
 }
 
 async function translateContent(text, apiKey) {
     try {
-        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        const response = await fetch("https://api.gptgod.online/v1/chat/completions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-                model: "gpt-3.5-turbo", // Hoặc model khác bạn muốn dùng
+                model: "gpt-3.5-turbo", // Hoặc model khác bạn muốn dùng từ danh sách hỗ trợ
                 messages: [
                     {
                         role: "system",
@@ -27,7 +28,7 @@ async function translateContent(text, apiKey) {
 
         if (!response.ok) {
             const errorData = await response.json();
-            console.error("Lỗi từ OpenAI API:", errorData);
+            console.error("Lỗi từ API:", errorData);
             return `Lỗi dịch thuật: ${errorData.error?.message || response.statusText}`;
         }
 
@@ -40,4 +41,4 @@ async function translateContent(text, apiKey) {
         return `Lỗi dịch thuật: ${error.message}`;
     }
 }
-
+ 

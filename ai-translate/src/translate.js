@@ -1,7 +1,7 @@
 load("language_list.js");
 
 function execute(text) {
-    const apiKey = "sk-OsMMq65tXdfOIlTUYtocSL7NCsmA7CerN77OkEv29dODg1EA";
+    const apiKey = "sk-NTJlrl1kl6EhELpoIerrZCN4gI4yYyxYOfu0QJNWQyaEqy9i";
     return translateContent(text, apiKey);
 }
 

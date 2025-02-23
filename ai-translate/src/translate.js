@@ -1,3 +1,5 @@
+load("language_list.js");
+
 function execute(text) {
     const apiKey = "sk-OsMMq65tXdfOIlTUYtocSL7NCsmA7CerN77OkEv29dODg1EA";
     return translateContent(text, apiKey);

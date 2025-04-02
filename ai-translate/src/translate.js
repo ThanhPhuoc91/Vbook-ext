@@ -17,10 +17,7 @@ function xorDecrypt(encoded, key) {
 //FREE GEMINI API KEY so i don't upset if they in internet :))
 //Tui không muốn lộ quá thô thôi :)) chứ biết up lên là lộ rồi
 const APIKEYS = [
-  "AIzaSyBzBM3yGWRB-N3w_qyR5aQGhTiM64-F-NI",
-  "AIzaSyDK8kc3MZF6iawF3Ex3ljspNv-H4mjd5fc",
-  "AIzaSyC1QADDp8K0OL4ROoMp6V0Roq4r_GP437g",
-  "AIzaSyCBca8laoI917B6hElIe_HHkJvMykxbsDU",
+  ""
 ];
 
 function getNextApiKey() {

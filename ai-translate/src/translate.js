@@ -35,7 +35,7 @@ function translateContent(text, from, to, retryCount, keyApi) {
   if (retryCount > 2) return null;
 
   let rawText = text;
-  let modelId = "gemini-2.0-flash";
+  let modelId = "gemini-2.5-flash-lite-preview-06-17";
   let generateContentApi = "generateContent";
   let requestBody = {
     // safetySettings: [
